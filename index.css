@@ -1,7 +1,6 @@
-@import 
-url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   background-color: grey;
   text-align: center;
 }
-
 
 nav ul {
   list-style-type: none;
@@ -43,7 +41,7 @@ nav ul li a:hover {
 
 /* Additional styles for an attractive navigation bar */
 nav {
-  background-color: #222;
+  background-color: #204ef3;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -57,7 +55,6 @@ nav ul li a:hover {
   border-bottom: 2px solid #fff;
 }
 
-
 /* code for div */
 
 .second_main {
@@ -67,7 +64,8 @@ nav ul li a:hover {
 }
 
 .contentss {
-  width: 50%;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .contentss .heading2 h1 {
@@ -80,11 +78,12 @@ nav ul li a:hover {
 }
 
 #img1 {
-  width: 50%;
+  width: 100%;
   max-width: 100%;
   display: block;
   margin-left: auto;
-  padding-right: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -94,7 +93,7 @@ nav ul li a:hover {
 }
 
 .content-wrapper {
-  width: 50%;
+  width: 100%;
   background-color: rgb(9, 22, 19);
   padding: 5%;
   color: #ffffff;
@@ -110,11 +109,11 @@ h1 {
 h2 {
   margin-bottom: 100px;
   font-weight: 200;
-  line-height:calc() ;
+  line-height: calc(1.2 * 2);
 }
 
 figure {
-  width: 50%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -126,7 +125,7 @@ figure {
 .button a {
   display: inline-block;
   padding: 10px 50px;
-  background: orange;
+  background: rgb(59, 80, 216);
   border-radius: 30px;
   text-decoration: none;
   color: black;
@@ -140,6 +139,37 @@ figure {
   background: black;
   color: orange;
 }
-.img{
-    size: 0cqmin;
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contentss {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contentss {
+    width: 70%;
+  }
+
+  #img1 {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    width: 70%;
+  }
+
+  #img1 {
+    width: 100%;
+    margin-right: 0;
+  }
 }

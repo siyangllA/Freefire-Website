@@ -1,3 +1,4 @@
+/* code for connect.css */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -42,60 +43,84 @@ nav ul li a:hover {
 }
 
 /* CSS styles for the layout */
-    .last_main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-color: #f9f9f9;
-        padding: 20px;
-      }
-  
-      .Container {
-        width: 50%;
-        text-align: center;
-      }
-  
-      .Container h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #333;
-      }
-  
-      #first_para1 {
-        color: #666;
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-  
-      #switch {
-        display: block;
-        margin: 0 auto;
-        padding: 10px 20px;
-        font-size: 18px;
-        color: #fff;
-        background-color: #e74c3c;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-  
-      #switch:hover {
-        background-color: #c0392b;
-      }
-  
-      #img0 {
-        width: 50%;
-        max-width: 400px;
-        height: auto;
-        margin-left: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
+.last_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
 
+.Container {
+  width: 50%;
+  text-align: center;
+}
 
-      body {
-        font-family: "Open Sans", sans-serif;
-        background-color: grey;
-      }
+.Container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1f1010;
+}
+
+#first_para1 {
+  color: #030202;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#switch {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #080b0b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#switch:hover {
+  background-color: #081011;
+}
+
+#img0 {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(86, 236, 253);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .Container {
+    width: 100%;
+  }
+
+  #img0 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .Container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Container {
+    width: 50%;
+  }
+}
