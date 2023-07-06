@@ -78,8 +78,7 @@ nav ul li a:hover {
 }
 
 #img1 {
-  width: 100%;
-  max-width: 100%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -159,17 +158,6 @@ figure {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-  }
 
-  .content-wrapper {
-    width: 70%;
-  }
 
-  #img1 {
-    width: 100%;
-    margin-right: 0;
-  }
-}
+
